@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope - Conditionals and Switch-cases ! </title>
+</head>
+<body>
+    <div>
+        <h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis molestias ab at perspiciatis a ad doloribus voluptates tenetur neque praesentium saepe non quaerat esse vero earum aliquid, quos itaque accusantium blanditiis recusandae. Ullam maiores atque facilis illum quod. Aut, laudantium.</p>
+        </h1>
+    </div>
+    <script>
+        // same name : can be changes 
+        var name = "sharan poojari";
+        console.log(name);
+        name = "shivram poojari";
+        console.log(name);
+
+        var name = "dollar sign sharan ";
+        console.log(name);
+
+        // we will now use let instead of var : 
+        let friend = "siddhant";
+        // console.log(friend);
+
+        // let friend = "arjun";
+        // console.log(friend);        --> error when we do so
+
+        // let is a local var inside block - if else , { }
+        {
+            let friend = "arjun" 
+            console.log(friend);
+        }
+        console.log(friend);
+
+
+        const enemy = "smit";
+        console.log(enemy);
+
+        // enemy = "dinesh";
+        // console.log(enemy);   --> error 
+
+        
+
+        // conditional statement : 
+        const age = 1;
+        if (age<21 && age>1 ) {
+            console.log("Bunty , tera sabun slow hai kya ");
+        }
+        else if (age == 1) {
+            console.log(" soja beta ");
+        }
+        else{
+            console.log("baby welcome to the party  :-) ")
+        }
+
+
+        // switch case statement : 
+        const age = 4; 
+    switch (age) {
+        case 4:
+            console.log("The value of cups is 4")
+            break;
+
+        case 41:
+            console.log("The value of cups is 41")
+            break;
+
+        case 42:
+            console.log("The value of cups is 42")
+            break;
+
+        case 43:
+            console.log("The value of cups is 43")
+            break;
+    
+        default:
+            console.log("The value of cups is none of 4, 41, 42, 43")
+            break;
+    }
+    </script>
+</body>
+</html>
