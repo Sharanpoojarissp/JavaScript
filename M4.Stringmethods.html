@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Methods </title>
+</head>
+<body>
+    <div class="container">
+        <h2>this is a heading ! </h2>
+        <p>this is a prargraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto in adipisci excepturi quidem minima illum sed officiis officia labore quis, quisquam odio, nesciunt nobis! Maiores, explicabo earum nesciunt soluta impedit temporibus fuga rerum nostrum perspiciatis repudiandae quibusdam, quasi quae fugit.  </p>
+    </div>
+</body>
+<script>
+    console.log("hello sharan , welcome to javascript !!!");    
+    var name = "this is sharan shivram poojari on this side ";
+    var name1 = "SHARAN SHIVRAM POOJARI HERE  ";
+
+    // first occurence of is : 2 and last occ of is : 36 
+    var firstocc = name.indexOf('is');
+    console.log(firstocc);
+    var lastocc = name.lastIndexOf('is');
+    console.log(lastocc);
+
+    // Substring of name : his is sharan s
+    var substringofName = name.slice(1,16);
+    console.log(substringofName);
+
+    var substringofName1 = name.substring(1,16);
+    console.log(substringofName1);
+
+    // Substring of name : his is sharan sh
+    var substringofName2 = name.substr(1,16);
+    console.log(substringofName2);
+
+    //replace certains words 
+    var replace = name.replace('sharan shivram' , '8h@r@Pie 8hivr@M');
+    console.log(replace);
+
+    // converting name to upper/lower cases : 
+    console.log(name.toUpperCase());
+    console.log(name1.toLowerCase());
+
+    // triming whitespaces : start/end , only start/end 
+    var trim_this = "     sharan   shivram poojari       .      ";
+    console.log(trim_this); 
+    console.log(trim_this.trim()); 
+    console.log(trim_this.trimStart()); 
+    console.log(trim_this.trimEnd()); 
+
+    // just like array we can print the pos of a single element : 
+    var indexing_name = "sharan poojari";
+    console.log(indexing_name[5]);
+
+    // char and char code at index : 
+    var time = "shivram giryappa poojari ";
+    var ind = time.charAt(5);
+    console.log(ind);
+    var ind = time.charCodeAt(5);
+    console.log(ind);
+</script>
+</html>
