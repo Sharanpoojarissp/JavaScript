@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings in Jasvascript </title>
+</head>
+<body>
+    <div class="container">
+        <h3>Javascript - Strings </h3>
+        <div id="id_as_content_here"></div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, aut corporis. Hic vero non similique quo perferendis a, ab possimus autem deserunt veritatis minus id numquam accusantium iusto cum? Vel optio reprehenderit ut nobis aut delectus, perferendis deserunt repellendus amet.</p>
+    </div>
+    <script>
+        console.log("this is sharan shivram poojari , mic testing ");
+
+        // creating first string :
+        var name = "sharan shivram poojari";
+        console.log(name);
+
+        //concatination property of string : 
+        var name = "sharan";
+        var age = "21";
+        var college = "LTCE";
+        console.log("decription of student : \n "  + (name  + age + college));
+
+        //temp property of string :
+        var temp =`${name} is a good person \n he studies in ${college} and \n he is aged ${age}`;
+        console.log(temp);
+
+        // finding the length of a given string : 
+        var namee = "sharan";
+        var length = namee.length;
+        console.log("the length of the name is : " + length);
+
+        // dyanamically changing the content of the website using the id or targeting id - demo : //step 1 : 
+        document.getElementById('id_as_content_here').innerHTML = '<h2> This is the heading which got added !!! </h2>'
+        //step2 is make id as id_as_content_here : <div id="id_as_content_here"></div>
+    </script>
+</body>
+</html>
