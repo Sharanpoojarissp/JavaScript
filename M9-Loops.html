@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad tempora libero maxime necessitatibus consequuntur eligendi nulla iusto? Hic tempora eveniet minima voluptatem iusto qui adipisci cupiditate praesentium ipsam odit. Praesentium.</p>
+    </div>
+</body>
+<script>
+    console.log("this document is all about the loops : ");
+
+    // for loop in js 
+    let i = 10;
+    for (let i = 0; i < 10; i++){
+        console.log("the number is : " + i);
+    }
+
+    // iterating a array : 
+    let myfriends = ["sharan" , "sid" , "arjun" , "smit" , "ankit" , "dinesh"];
+    for (let i = 0; i < myfriends.length; i++) {
+        console.log(myfriends[i]);                                
+    }
+
+//    for each loop : does not work here ! 
+    // myfriends.forEach(function f(element) {
+    //     console.log("hello" + element);
+    // });
+
+    // friends.forEach(function f(element){
+    //      console.log("Hello Friend, " + element + " to modern JavaScript");
+    //  });
+    
+    // for of loop : 
+    for(elements of myfriends){
+        console.log("hello friendssssss , mera naam : " + elements);
+    }
+
+    // for in loop : used to iterate the object : 
+    //object with keys  :
+    let employee ={
+        name : "sharan shivram poojari ",
+        roll : 46,
+        salary : 2000000,
+        branch : "cse aiml",
+    }
+
+   for(key in employee){
+    console.log(`the ${key} of the employee is ${employee[key]}`);
+   }
+
+// while loop in js : 
+let i =0;
+    while(i<4){
+        console.log(`${i} is less than 4`);
+        i++;
+    }
+   
+// do-while loop :
+let j =34;
+    do{
+        console.log(`${j} is less than 4 and we are inside do while loop`);
+        j++;
+    }while(j<4);
+
+
+</script>
+</html>
