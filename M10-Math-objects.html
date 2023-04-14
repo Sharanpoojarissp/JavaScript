@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object ! </title>
+</head>
+<body>
+    <div class="container">
+        <h1>this is about math object !! </h1>
+    </div>
+
+</body>
+    <script>
+        // printing the math object : 
+        let m = Math;
+        console.log(m);
+
+        //Printing the constants from the math objects : 
+        console.log("the value of E is : " , Math.E);
+        console.log("the value of PI is : " , Math.PI);
+        console.log("the value of LN10 is : " , Math.LN10);
+
+        //Printing the functions from the math objects : 
+        // let a = 34.3456;
+        let a = 34.8456;
+        let b = 98;
+
+        // returns round up down : ciel and floor 
+        console.log("the values of a and b is : " , a , b );
+        console.log("the values of a and b is : " , Math.round(a) , Math.round(b) );
+
+        // return power 
+        console.log("the a to the power b is : " , Math.pow(2 , 13));
+        console.log("the sqaure root of the given number is : " , Math.sqrt(25));
+
+        // ceil and floor --> rounded up and rounded down : 
+        console.log(" the rounded up value for the given decimal number is : " , Math.ceil(100.1));
+        console.log(" the rounded down value for the given decimal number is : " , Math.floor(100.1));
+
+        // absoltue function --> neg ip --> pos op 
+        console.log(" the absolute value of number is : " , Math.abs(100.1));
+        console.log(" the absolute value of number is : " , Math.abs(-100.1));
+
+        // trignometric functions : 
+        console.log(" the value of sin (give values in radian) {in form of PI} is : " , Math.sin(Math.PI));
+        console.log(" the value of sin (give values in radian) {in form of PI} is : " , Math.sin(Math.PI/2));
+        console.log(" the value of cos (give values in radian) {in form of PI} is : " , Math.cos(Math.PI));
+        console.log(" the value of sin (give values in radian) {in form of PI} is : " , Math.cos(Math.PI/2));
+        console.log(" the value of cos (give values in radian) {in form of PI} is : " , Math.tan(Math.PI));
+        console.log(" the value of sin (give values in radian) {in form of PI} is : " , Math.tan(Math.PI/2));
+        
+        // min max function 
+        console.log("the minimum value of a , b , c is : ", Math.min(-100,155,1,4,6));
+        console.log("the minimum value of a , b , c is : ", Math.max(-100,155,1,4,6));
+      
+        //generating a random number function : 
+        // generates number from 0-->1 (range)
+        let r = Math.random();
+        console.log(" the random number generated is : " , r);
+  
+        // to generate random number b/w 1 to 100 : use fromula as : 
+        let num1 = 1;
+        let num2 = 100;
+        let r1 = num1 + (num2 - num1)* Math.random();
+        console.log(" the random number generated is : " , r1);
+   
+        </script>
+
+<!-- E: 2.718281828459045 -->
+<!-- LN2: 0.6931471805599453
+LN10: 2.302585092994046 -->
+
+</html>
