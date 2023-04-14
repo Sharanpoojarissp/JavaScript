@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON : Data transmission over n/w </title>
+</head>
+<body>
+    <div class="container">
+        this is a conatiner !!!!!!!
+    </div>
+
+</body>
+    <script>
+        let jsonObj = {
+            name : "sharan",
+            channel: " rulesbreaker",
+            friend : " bigSlime",
+            food : "pohaaaaaa",
+        }
+
+        console.log(jsonObj);
+
+        // converting it into string : 
+        let myjson = JSON.stringify(jsonObj);
+        console.log(myjson);
+
+        myjson = myjson.replace('sharan' , 'dllarsharran');
+        console.log(myjson);
+
+        newJson = JSON.parse(myjson);
+        console.log(newJson);
+
+    </script>
+</html>
